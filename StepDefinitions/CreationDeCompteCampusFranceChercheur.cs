@@ -2,7 +2,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
 using Reqnroll;
 using System;
-
+using OpenQA.Selenium.Chrome;
 namespace CampusFranceBDDAuto.StepDefinitions
 {
     [Binding]
@@ -18,7 +18,7 @@ namespace CampusFranceBDDAuto.StepDefinitions
         [Given("[je suis sur la pagee de création de compte Campus France]")]
         public void GivenJeSuisSurLaPageeDeCreationDeCompteCampusFrance()
         {
-            driver = new EdgeDriver();
+            driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.campusfrance.org/fr/user/register");
 
             try
