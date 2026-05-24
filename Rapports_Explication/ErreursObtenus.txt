@@ -1,0 +1,19 @@
+﻿1) Premiere erreur : 
+Le problème vient du fait que Reqnroll trouve plusieurs méthodes qui correspondent à la même phrase du scénario.
+
+J’ai créé trois classes différentes : une pour étudiant, une pour chercheur et une pour institutionnel. 
+
+Mais certaines étapes sont identiques dans les trois classes, par exemple l’étape qui renseigne l’email, 
+le mot de passe ou les informations personnelles.
+
+Quand Reqnroll exécute le scénario, il lit la phrase dans le fichier .feature, 
+puis il cherche la méthode C# qui correspond à cette phrase. 
+Comme la même phrase existe dans plusieurs classes, Reqnroll ne sait pas quelle méthode choisir. 
+Il considère donc que l’étape est ambiguë et il arrête le test avec une erreur AmbiguousBindingException.
+
+Pour corriger ce problème, il faut éviter de dupliquer les mêmes étapes dans plusieurs classes. 
+Les étapes communes doivent être écrites une seule fois, dans une classe commune, 
+et les étapes spécifiques doivent rester dans les classes étudiant, chercheur ou institutionnel.
+
+2) 2 eme erreur : 
+    OpenQA.Selenium.ElementNotInteractableException : element not interactable

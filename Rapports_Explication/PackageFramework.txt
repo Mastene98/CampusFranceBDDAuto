@@ -1,0 +1,24 @@
+﻿
+
+Packages : 
+Reqnroll.NUnit => Permet d’exécuter les scénarios Gherkin avec NUnit.
+
+Reqnroll.Tools.MsBuild.Generation => Permet de générer le code derrière les fichiers .feature.
+
+NUnit => Framework de test C#.
+
+NUnit3TestAdapter => Permet à Visual Studio d’afficher et lancer les tests dans l’Explorateur de tests.
+
+Microsoft.NET.Test.Sdk => Base nécessaire pour exécuter les tests .NET.
+
+Selenium.WebDriver => permet d interagir avec une interface web.
+
+Selenium.WebDriver.MSEdgeDriver => Permet à Selenium de piloter Microsoft Edge.
+
+Selenium.Support => Ajoute des outils utiles comme WebDriverWait et SelectElement.
+
+
+
+
+
+
